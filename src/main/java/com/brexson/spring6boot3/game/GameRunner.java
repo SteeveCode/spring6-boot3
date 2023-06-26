@@ -1,18 +1,22 @@
 package com.brexson.spring6boot3.game;
 
+//PacmanGame
 public class GameRunner {
-    private MarioGame game;
-    public GameRunner(MarioGame game) {
-        this.game = game;
-    }
+	
+	private GamingConsole game;
+	
+	public GameRunner(GamingConsole game) {
+		this.game = game;
+	}
 
-    public void run() {
+	public void run() {
+		
+		System.out.println("Running game: " + game);
+		game.up();
+		game.down();
+		game.left();
+		game.right();
+		
+	}
 
-        System.out.println("Running game: " + game);
-        game.up();
-        game.down();
-        game.left();
-        game.right();
-
-    }
 }
