@@ -1,5 +1,10 @@
 package com.brexson.spring6boot3.game;
 
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+@Qualifier("SuperContraGameQualifier")
 public class SuperContraGame implements GamingConsole{
 
 	public void up() {
