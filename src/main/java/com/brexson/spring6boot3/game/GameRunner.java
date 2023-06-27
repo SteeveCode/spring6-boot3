@@ -1,7 +1,10 @@
 package com.brexson.spring6boot3.game;
 
+import org.springframework.stereotype.Component;
+
 //PacmanGame
-public class GameRunner {
+@Component
+public class GameRunner{
 	
 	private GamingConsole game;
 	

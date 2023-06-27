@@ -1,5 +1,8 @@
 package com.brexson.spring6boot3.game;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class PacmanGame implements GamingConsole{
 	
 	public void up() {
