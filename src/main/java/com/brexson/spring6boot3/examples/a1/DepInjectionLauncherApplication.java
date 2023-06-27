@@ -10,9 +10,7 @@ import java.util.Arrays;
 
 @Component
 class YourBusinessClass{
-
     Dependency1 dependency1;
-
     Dependency2 dependency2;
     @Override
     public String toString() {
@@ -25,7 +23,7 @@ class YourBusinessClass{
         this.dependency1 = dependency1;
         this.dependency2 = dependency2;
     }
-    //    @Autowired
+//        @Autowired
 //    public void setDependency1(Dependency1 dependency1) {
 //        System.out.println("Setter Injection - setDependency1");
 //        this.dependency1 = dependency1;
@@ -47,7 +45,7 @@ class Dependency2{}
 public class DepInjectionLauncherApplication {
     public static void main(String[] args) {
         try(var context = new AnnotationConfigApplicationContext(DepInjectionLauncherApplication.class);){
-//            Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
+            Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
             System.out.println(context.getBean(YourBusinessClass.class));
 
         }
